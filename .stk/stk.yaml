@@ -1,0 +1,33 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-portal-0109-new
+  description: testes
+  stack-version-id: 01H990SY6S3H5K8T389YTZG2XY
+  stack: stack-portal-0109-new
+spec:
+  type: infra
+  infra-id: 01H9913WDA920KT7RN7CSAYDV3
+  plugins:
+    - name: estudiodeploy/stack-portal-0109-new@1.0.0/plugin-infra-portal-0109@0.0.1
+      alias: plugin-infra-portal-0109
+      plugin-version-id: 01H990EAMQ179SA59JAW2C7HRC
+      stack-version-id: 01H990SY6S3H5K8T389YTZG2XY
+      type: infra
+      inputs:
+        sns_topic_name1: topico-portal-new-fmcs-1
+        sns_topic_name2: topico-portal-new-fmcs-2
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: aws-sns-fmcs-portal-2
+            alias: alias-sns-1
+          - type: aws-sns-conn
+            selected: aws-sns-fmcs-portal-1
+            alias: alias-sns-2
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
