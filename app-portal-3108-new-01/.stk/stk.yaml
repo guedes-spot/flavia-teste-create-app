@@ -1,0 +1,27 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-portal-3108-new-01
+  description: teste
+  starter: estudiodeploy/stack-app-0109-v9/starter-3109-v9
+  stack-version-id: 01H98S4GXH7YGQZ00P1S65EETV
+  stack: stack-app-0109-v9
+spec:
+  type: app
+  plugins:
+    - name: estudiodeploy/stack-app-0109-v9@1.0.0/plugin-app-0109-v1@0.0.1
+      alias: plugin-app-0109-v1
+      plugin-version-id: 01H98RYZ0GF8VCRCDZ4QP5G1CE
+      stack-version-id: 01H98S4GXH7YGQZ00P1S65EETV
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
