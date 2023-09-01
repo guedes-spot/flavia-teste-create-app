@@ -8,6 +8,7 @@ metadata:
   stack: stack-app-0109-v9
 spec:
   type: app
+  app-id: 01H98XMFY41A7H7VMYTHDVT9FE
   plugins:
     - name: estudiodeploy/stack-app-0109-v9@1.0.0/plugin-app-0109-v1@0.0.1
       alias: plugin-app-0109-v1
