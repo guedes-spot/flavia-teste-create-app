@@ -8,6 +8,7 @@ metadata:
   stack: stack-1711@1.0.0
 spec:
   type: app
+  app-id: 01HFFDMW938TKR8WFCGE6EZQN2
   plugins:
     - name: studio-fmcs/stack-1711@1.0.0/plugin-app-1711@1.0.0
       alias: plugin-app-1711-1700250931202
