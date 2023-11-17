@@ -7,6 +7,7 @@ metadata:
   stack: stack-1711@1.0.0
 spec:
   type: infra
+  infra-id: 01HFFDFSWSA59DPWDRDAXASHVK
   plugins:
     - name: studio-fmcs/stack-1711@1.0.0/plugin-infra-1611-v1@1.1.0
       alias: plugin-infra-1611-v1-1700250742554
