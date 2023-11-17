@@ -1,0 +1,33 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-1711-v8
+  description: testes
+  stack-version-id: 01HFF0TA6PAVDCC21TR08RBX4D
+  stack: stack-1711@1.0.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-fmcs/stack-1711@1.0.0/plugin-infra-1611-v1@1.1.0
+      alias: plugin-infra-1611-v1-1700250742554
+      plugin-version-id: 01HFF0R486W3W6JJ5GCV1QMD88
+      stack-version-id: 01HFF0TA6PAVDCC21TR08RBX4D
+      type: infra
+      inputs:
+        sns_topic_name1: topc-1711-1
+        sns_topic_name2: topc-1711-2
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: sns-1711-1
+            alias: alias-sns-1
+          - type: aws-sns-conn
+            selected: sns-1711-2
+            alias: alias-sns-2
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
