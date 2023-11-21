@@ -1,0 +1,34 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-2111-v1
+  description: testes
+  starter: studio-fmcs/stack-1711@1.0.0/starter-1711-1
+  stack-version-id: 01HFF0TA6PAVDCC21TR08RBX4D
+  stack: stack-1711@1.0.0
+spec:
+  type: app
+  plugins:
+    - name: studio-fmcs/stack-1711@1.0.0/plugin-app-1711@1.0.0
+      alias: plugin-app-1711-1700588202161
+      plugin-version-id: 01HFF10DBTQME5ADV06Y3SBB84
+      stack-version-id: 01HFF0TA6PAVDCC21TR08RBX4D
+      type: app
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-sns-conn
+            selected: conect-app-1
+            alias: sns-1711-1
+          - type: aws-sns-conn
+            selected: conect-app-1
+            alias: sns-1711-2
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
