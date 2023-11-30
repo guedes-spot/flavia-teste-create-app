@@ -1,0 +1,27 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-3011-v2
+  description: "testes gráficos"
+  stack-version-id: 01HGG4M2PTPS3NQD0TZ86R2X0J
+  stack: stack-3011@1.0.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-fmcs/stack-3011@1.0.0/plugin-infra-3011@0.0.1
+      alias: plugin-infra-3011-1701349292166
+      plugin-version-id: 01HGG4AMKJVVS1T9J7D6TE12G5
+      stack-version-id: 01HGG4M2PTPS3NQD0TZ86R2X0J
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
