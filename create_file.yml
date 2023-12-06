@@ -1,0 +1,17 @@
+kind: application
+metadata:
+  description: testes
+  name: app-0612-v1
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-0123456789-0123456789-0123456789-0123456789-012345678-1701887971424
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: cli-studio/stack-0123456789-0123456789-0123456789-0123456789-012345678@2.0.0/plugin-0123456789-0123456789-0123456789-0123456789-012345678
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
