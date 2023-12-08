@@ -7,6 +7,7 @@ metadata:
   stack: stack-0812@1.0.0
 spec:
   type: infra
+  infra-id: 01HH4ZKDJSZ681NA4CM9FGQNW6
   plugins:
     - name: studio-qa-fmcs/stack-0812@1.0.0/pluginfra-stg-0812@0.0.1
       alias: pluginfra-stg-0812-1702048120961
