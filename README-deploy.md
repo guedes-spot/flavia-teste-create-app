@@ -1,4 +1,4 @@
-# flavia-teste-create-app## StackSpot Plugin
+## StackSpot Plugin
 
 ## Jinja
 
