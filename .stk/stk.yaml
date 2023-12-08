@@ -1,0 +1,33 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-portal-0812
+  description: testes
+  stack-version-id: 01HH4Y2KC60BSZF4DNM276DAJ5
+  stack: stack-0812@1.0.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-qa-fmcs/stack-0812@1.0.0/pluginfra-stg-0812@0.0.1
+      alias: pluginfra-stg-0812-1702048120961
+      plugin-version-id: 01HH4Y088JJ5Y8J6WYXF0TFMZ8
+      stack-version-id: 01HH4Y2KC60BSZF4DNM276DAJ5
+      type: infra
+      inputs:
+        sns_topic_name1: topico-portal-sns-1
+        sns_topic_name2: topico-portal-sns-2
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: portal-sns-2
+            alias: alias-sns-1
+          - type: aws-sns-conn
+            selected: portal-sns-1
+            alias: alias-sns-2
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/flavia-teste-create-app

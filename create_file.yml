@@ -1,0 +1,24 @@
+kind: shared-infrastructure
+metadata:
+  description: testes
+  name: infra-portal-0812
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: pluginfra-stg-0812-1702048120961
+    connections:
+      generates:
+      - alias: alias-sns-2
+        selected: portal-sns-1
+        type: aws-sns-conn
+      - alias: alias-sns-1
+        selected: portal-sns-2
+        type: aws-sns-conn
+      requires: []
+    inputs:
+      sns_topic_name1: topico-portal-sns-1
+      sns_topic_name2: topico-portal-sns-2
+    inputs-envs: {}
+    name: studio-qa-fmcs/stack-0812@1.0.0/pluginfra-stg-0812
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
+  stack-qualifier: studio-qa-fmcs/stack-0812@1.0.0
