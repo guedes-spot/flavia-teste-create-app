@@ -8,6 +8,7 @@ metadata:
   stack: andre-stack@0.0.5
 spec:
   type: app
+  app-id: 01HKAYVZ4RERNHET6D36MPC687
   plugins:
     - name: cli-studio/andre-stack@0.0.5/app-plugin-basic@0.0.1
       alias: app-plugin-basic-1704396185829
