@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-teste-fla
+  description: testes
+  starter: cli-studio/andre-stack@0.0.5/basic-starter
+  stack-version-id: 01HGGMZ2A3ZWQR6FJDT1KFN97E
+  stack: andre-stack@0.0.5
+spec:
+  type: app
+  app-id: 01HKAYVZ4RERNHET6D36MPC687
+  plugins:
+    - name: cli-studio/andre-stack@0.0.5/app-plugin-basic@0.0.1
+      alias: app-plugin-basic-1704396185829
+      plugin-version-id: 01HEWSTQ2FPWKXA0SQ8KKEHHNB
+      stack-version-id: 01HGGMZ2A3ZWQR6FJDT1KFN97E
+      type: app
+      inputs:
+        resource: ResourceContext
+        method: POST
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
