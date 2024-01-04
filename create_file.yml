@@ -1,0 +1,17 @@
+kind: application
+metadata:
+  description: testes
+  name: app-teste-fla
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: app-plugin-basic-1704396185829
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: POST
+      resource: ResourceContext
+    inputs-envs: {}
+    name: cli-studio/andre-stack@0.0.5/app-plugin-basic
+  repository: https://github.com/guedes-spot/flavia-teste-create-app
